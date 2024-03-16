@@ -52,9 +52,15 @@ const onUpdateActiveLink = (value) => {
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </HashLink> */}
+              <div class="switch">
+	              <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+	              <label for="language-toggle"></label>
+	              <span class="on">PT</span>
+	              <span class="off">EN</span>
+  	        </div>
             </span>
           </Navbar.Collapse>
         </Container>

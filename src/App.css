@@ -94,8 +94,9 @@ nav.navbar {
   
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: #121212;
+  padding: 12px 0;
+  background-color: #1212128a;
+  backdrop-filter: blur(8px);
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -241,7 +242,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .switch > span {
   position: absolute;
-  top: 10px;
+  top: 9px;
   pointer-events: none;
   font-family: 'Helvetica', Arial, sans-serif;
   font-weight: bold;
@@ -257,18 +258,18 @@ input.check-toggle-round-flat:checked ~ .off {
 }
 
 input.check-toggle-round-flat:checked ~ .on {
-  color: #111;
+  color: #ffff;
 }
 
 .switch > span.on {
   left: 0;
-  padding-left: 2px;
-  color: #fff;
+  padding-left: 5px;
+  color: #111;
 }
 
 .switch > span.off {
   right: 0;
-  padding-right: 2px;
+  padding-right: 5px;
   color: #1111;
 }
 
@@ -344,7 +345,7 @@ input.check-toggle-round-flat:checked + label:after {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/web-banner.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -726,4 +727,7 @@ input.check-toggle-round-flat:checked + label:after {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.footer a {
+  margin-top: 60px;
 }

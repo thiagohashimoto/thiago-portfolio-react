@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import headerImg from "../assets/img/profile-pic.png";
+import headerImg from "../assets/img/profile-pic-transparent.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +11,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+    const toRotate = [ "Fullstack Developer", "Software Engineer Student", "Web Developer" ];
     const period = 2000;
   
     useEffect(() => {
@@ -55,14 +55,17 @@ export const Banner = () => {
               <TrackVisibility>
                 {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Thiago`} 
+                  <span className="tagline">Bem vindo ao meu Portfólio</span>
+                  <h1>
+                    {`Olá mundo, eu sou o Thiago!`} 
                     
                     </h1>
-                    <h2><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
-                        <span className="wrap">{text}</span>
-                    </span></h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h2>
+                      <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Fullstack Developer", "Software Engineer Student", "Web Developer" ]'>
+                      <span className="wrap">{text}</span>
+                      </span>
+                    </h2>
+                    <p>Sou Thiago, Desenvolvedor Fullstack em transição de carreira. Graduado em engenharia civil e cursando Engenharia de Software pela USP/Esalq. Apaixonado por tecnologia </p>
                     <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
               </TrackVisibility>

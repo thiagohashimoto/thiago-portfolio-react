@@ -66,7 +66,7 @@ export const Banner = () => {
                       </span>
                     </h2>
                     <p>Sou Thiago, Desenvolvedor Fullstack em transição de carreira. Graduado em engenharia civil e cursando Engenharia de Software pela USP/Esalq. Apaixonado por tecnologia </p>
-                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                    <button onClick={() => window.location = 'mailto:thiago.hashimoto94@gmail.com'}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
               </TrackVisibility>
             </Col>

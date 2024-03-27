@@ -397,7 +397,7 @@ input.check-toggle-round-flat:checked + label:after {
 .banner img {
   animation: updown 3s linear infinite;
 }
-@keyframes updown {
+/* @keyframes updown {
     0% {
         transform: translateY(-20px);
     }
@@ -407,7 +407,7 @@ input.check-toggle-round-flat:checked + label:after {
     100% {
         transform: translateY(-20px);
     }
-}
+} */
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
